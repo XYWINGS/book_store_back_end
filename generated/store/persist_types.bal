@@ -13,6 +13,16 @@ public type Book record {|
     int copies_in_stock;
 |};
 
+public type BookRequest record {|
+    int id;
+    string book_title;
+    string author;
+    string category;
+    int published_year;
+    decimal price;
+    int copies_in_stock;
+|};
+
 public type BookOptionalized record {|
     int id?;
     string book_title?;
